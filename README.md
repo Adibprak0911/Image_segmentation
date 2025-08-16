@@ -1,4 +1,4 @@
-# Watershed-algorithm
+# Watershed algorithm
 Watershed for simple image segmentation implemented with OpenCV
 This script demonstrates automated image segmentation using the watershed algorithm, a powerful tool in computer vision for separating overlapping or touching objects in an image. The watershed algorithm is inspired by topological flooding—imagining each pixel as terrain, and "water" filling up basins until it meets at ridge lines, which become segmentation boundaries. This method is especially useful for partitioning complex regions, such as coins touching in a photograph.
 
