@@ -45,5 +45,25 @@ It expands markers outward until boundaries between touching objects are establi
 <img width="1274" height="1080" alt="image" src="https://github.com/user-attachments/assets/c65a07d4-d4a0-48ac-9df3-e25647bc5b65" />
 <img width="1274" height="1086" alt="image" src="https://github.com/user-attachments/assets/ffb64fae-05ea-4230-bad6-3de6a8acfc93" />
 
+# K-means clustering 
+
+This project applies the K-means clustering algorithm for image segmentation, leveraging a weighted 5-dimensional Euclidean space. In this method, each pixel is represented by its RGB color values and (x, y) spatial coordinates, forming a feature vector: [R, G, B, x, y].
+
+By clustering pixels in this 5D space, the algorithm groups together regions that are similar in both color and location, resulting in segments that are coherent in appearance and spatial structure. Weights are assigned to each feature component: the RGB channels are given higher importance to prioritize color similarity, while the spatial positions (x, y) have slightly lower weights, ensuring that neighboring pixels are considered together but color still dominates the segmentation.
+
+Segmentation is performed by minimizing the sum of squared Euclidean distances between each pixel and its assigned cluster centroid in this weighted space. This approach yields segmentations that are both color-consistent and spatially smooth—ideal for tasks like object separation
+
+## Input 
+
+<img width="800" height="830" alt="image" src="https://github.com/user-attachments/assets/ca7bfe63-4e04-4c3d-8782-adc34096f563" />
+
+## Post segmentation 
+
+<img width="800" height="830" alt="image" src="https://github.com/user-attachments/assets/43e7ca37-1398-4722-94f7-b912c8b3ecef" />
+
+
+
+
+
 
 
